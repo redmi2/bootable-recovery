@@ -76,6 +76,7 @@ LOCAL_STATIC_LIBRARIES := \
     libminui \
     libpng \
     libfs_mgr \
+    libcrypto_utils_static \
     libcrypto_static \
     libbase \
     libcutils \
@@ -145,7 +146,7 @@ LOCAL_SRC_FILES := \
     verifier.cpp \
     ui.cpp
 LOCAL_C_INCLUDES := system/core/fs_mgr/include
-LOCAL_STATIC_LIBRARIES := libcrypto_static
+LOCAL_STATIC_LIBRARIES := libcrypto_utils_static libcrypto_static
 include $(BUILD_STATIC_LIBRARY)
 
 include \
